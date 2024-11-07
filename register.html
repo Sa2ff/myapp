@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register - Restaurant Management System</title>
+    <style>
+        body {
+            background-image: url('register.jpg'); /* Adjust the path as necessary */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Change text color for better visibility */
+            height: 100vh; /* Full viewport height */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin: 0; /* Remove default margin */
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 19px;
+            width: 50%;
+            text-align: center; /* Center text inside the container */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        button {
+            width: 100%; /* Make button fill the width of the container */
+            padding: 10px;
+            background-color: peru;
+        }
+
+        p {
+            margin-top: 6px;
+        }
+
+        a {
+            color: #00ffcc; /* Link color for better visibility */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Form</h1>
+        <form id="register-form">
+            <input type="text" id="reg-username" placeholder="Username" required>
+            <input type="email" id="reg-email" placeholder="Email" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <input type="text" id="reg-phonenumber" placeholder="Phone Number" required>
+            
+
+            <!-- Dropdown for user role -->
+            <label for="user-role">Select Role:</label>
+            <select id="user-role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="admin">Admin</option>
+                <option value="customer">Customer</option>
+            </select>
+            
+                <label for="user-gender">Select user-gender:</label>
+            <select id="user-gender" required>
+                <option value="" disabled selected>Select user-gender</option>
+                <option value="female">female</option>
+                <option value="male">male</option>
+            </select>
+
+           <!-- Register Button -->
+           <button type="submit">Register</button> 
+       </form>
+
+       <!-- Link to Login Page -->
+       <p>Already have an account? <a href="index.html">Login here</a></p> 
+    </div>
+
+   <!-- Link to JavaScript -->
+   <script src="script.js"></script> 
+</body> 
+</html> 

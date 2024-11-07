@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.dashboard-options {
+    margin-top: 20px;
+}
+
+.dashboard-options ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.dashboard-options li {
+    margin: 10px 0; /* Space between items */
+}
+
+.dashboard-options a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+}
+
+.dashboard-options a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+button {
+    width: 100%; /* Make button fill the width of the container */
+    padding: 10px;
+}
+
+button:hover {
+   background-color:#0056b3;/* Darker shade on hover */  
+}

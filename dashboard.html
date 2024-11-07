@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard - Restaurant Management System</title>
+    <style>
+        body {
+            background-image: url("admin.png");
+            background-size: cover;
+            background-position: center;
+            color: white; /* Change text color for better visibility */
+            height: 100vh; /* Full viewport height */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <p>Welcome to the Restaurant Management System!</p>
+
+        <!-- Dashboard Options -->
+        <div class="dashboard-options">
+           <!-- Options List -->
+           <h2>Options</h2> 
+           <ul> 
+               <li><a href="#">View Menu</a></li> 
+               <li><a href="#">Manage Orders</a></li> 
+               <li><a href="#">View Customers</a></li> 
+               <li><a href="#">Reports</a></li> 
+               <li><a href="#">Settings</a></li> 
+           </ul> 
+       </div>
+
+       <!-- Logout Button -->
+       <button onclick="logout()">Logout</button> 
+   </div>
+
+   <!-- Link to JavaScript -->
+   <script src="script.js"></script> 
+</body> 
+</html> 
